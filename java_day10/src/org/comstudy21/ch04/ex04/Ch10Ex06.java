@@ -1,32 +1,5 @@
 package org.comstudy21.ch04.ex04;
 
-class genre{
-	private String genre;
-	public genre(){
-		this("no-genre");
-	};
-	
-	public genre(String genre) {
-		this.genre=genre;
-	}
-
-	public String getGenre() {
-		return genre;
-	}
-
-
-	public void setGenre(String genre) {
-		this.genre = genre;
-	}
-	
-	public void showGenre(){
-		System.out.println("이 노래의 장르는 "+genre+"입니다.");
-	}
-
-	
-	
-}
-
 class Music {
 	private String singer;
 	private String song;
@@ -77,10 +50,6 @@ public class Ch10Ex06 {
 		m2.setSong("1과2분의1");
 		Music m3 = new Music("제니","solo");
 		
-//		m1.play();// ITZY의 wannabe 실행 중입니다.
-//		m2.play();// 투투의 1과2분의1  실행 중입니다.		
-//		m3.play();// 제니의 solo 실행 중입니다.
-		
 		MusicPlayer mp = new MusicPlayer();
 		//최대 7곡까지 추가 가능
 		mp.add(m1);
@@ -90,7 +59,5 @@ public class Ch10Ex06 {
 		
 		mp.play();
 		//주말과제 : 전화번호부 구현(클래스를 최대한 많이 만들어서 구현) 계속 업데이트하여 버전 3까지 구현
-		
 	}
-
 }
