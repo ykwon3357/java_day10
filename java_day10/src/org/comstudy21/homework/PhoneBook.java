@@ -52,12 +52,13 @@ public class PhoneBook {
 		System.out.print("선택: ");
 		try {
 			no = Integer.parseInt(sc.next());
+			return no;
 		} catch (NumberFormatException e) {
 			sc.nextLine();
 			System.out.print("잘못 입력, ");
-			menu();
+			return -1;
 		}
-		return no;
+		
 	}
 
 	// pArr에 People 객체를 추가한다.
