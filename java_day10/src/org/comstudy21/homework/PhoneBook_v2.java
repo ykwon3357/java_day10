@@ -11,12 +11,13 @@ class Menu{
 		System.out.print("선택: ");
 		try {
 			no = Integer.parseInt(sc.next());
+			this.no=no;
 		} catch (NumberFormatException e) {
 			sc.nextLine();
 			System.out.print("잘못 입력, ");
-			new Menu(0);
+			this.no=-1;
 		}
-		this.no=no;
+		
 	}
 	public int getNo() {
 		return no;
